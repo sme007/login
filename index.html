@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div>
+        <div class="back">
+            <div class="header">
+                <a href="#">LOGO</a>
+            </div>
+            <div class="author">
+                <img src="./img/author.jpg" alt="">
+                <p><strong>Pawel Czerwinski</strong> <br><span>@pawel_czerwinski</span></p>
+            </div>
+        </div>
+            <div class="register">
+                <button class="btn sign-in" onclick="document.getElementById('id01').style.display='block'">Sign in</button>
+                <button class="btn sign-up" onclick="document.getElementById('id02').style.display='block'">Register</button>
+            </div>
+            <div class="line">
+                <hr>
+            </div>
+           
+        </div>
+    <!-- Modal -->
+    <!-- Login -->
+    <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+            <form action="" method="POST" class="modal-content animate">
+                <div class="imgcontainer">
+                    <img src="./img/avatar.png" alt="avatar image" class="avatar">
+                </div>
+                <div class="container">
+                    <label for="username">Username<br></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <button type="submit" class="button-modal">Login</button>
+                    <label for="">Remember me
+                        <input type="checkbox" checked="checked" name="remember">
+                    </label>
+                    <p>Don't have account yet?<a href="./index.html">Register</a></p>
+                </div>
+                <div class="container" style="background-color: #f1f1f1;">
+                    <button type="button" class="button-modal cancelbtn" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                    <span class="psw">Forget <a href="#">password?</a></span>
+        
+                </div>
+         </form>         
+    </div>
+    <!-- Registration -->
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+        <form action="" method="POST" class="modal-content animate"> 
+            <h3>Registration Form</h3>           
+            <div class="container">
+                <label for="username">Username<br></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="email">Email <br></label>
+                <input type="email" placeholder="Enter Email" name="email" required><br>
+                <label for="password">Password</label>
+                <input type="text" placeholder="Enter Password" name="password" required>
+                <label for="filename">Upload your avatar</label>
+                <input type="file" name="filename" required class="filename">
+                <button type="submit" class="button-modal">Register</button>
+            </div>
+            <div class="container" style="background-color: #f1f1f1;">
+                <button type="button" class="button-modal cancelbtn" onclick="document.getElementById('id02').style.display='none'">Cancel</button>
+                <span class="psw">Already registered? <a href="./index.html">Login</a></span>
+    
+            </div>
+     </form>         
+</div>
+
+
+
+        
+       
+        
+</body>
+</html>
